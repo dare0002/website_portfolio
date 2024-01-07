@@ -7,16 +7,29 @@
 body{
     min-height: 100vh;
     background-size: cover;
+    background-image: linear-gradient(to bottom, #BDBFC0 0%, #C2B6C0 50%);
 }
 
 main{
     margin: 0 auto;
 }
 
+/* Forside */
+
  h1{
     font-family: 'EB Garamond', serif;
-    color: #ffff;
-    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.tekst_forside{
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.hero {
+    position: relative;
 }
 
 .heroimg{
@@ -25,3 +38,124 @@ main{
     display: block;
     margin: 0 auto;
 }
+
+.herotekst{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ommig{
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    color: #ffffff;
+}
+
+.projekter{
+    position: absolute;
+    top: 95%;
+    left: 90%;
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff;
+}
+
+/* Forside slutter */
+
+
+
+/* OM MIG side starter */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+    padding-top: 10%;
+    padding: 10% 10% 5%;
+}
+
+
+
+/* Projekter side starter */
+
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+}
+
+.container {
+    position: relative;
+    
+}
+
+.projekter_img {
+    width: 100%;
+}
+
+
+
+/* Karusell */
+
+.banner .carousel-box{
+    position: relative;
+    min-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEBECA;
+    box-shadow: 20px 20px 20px;
+    border: 1px solid #C2B6C0;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.carousel {
+    /* position: relative; */
+    height: 550px;
+    perspective: 1500;
+}
+
+.carousel .carousel-item{
+    width: 250px;
+    cursor: pointer;
+}
+
+.carousel .carousel-item img{
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* chatgpt */
+
+.carousel-overlay {
+            position: absolute;
+            bottom: -350px;
+            left: 350px;
+            width: 50%;
+            padding: 20px;
+            background: rgba(222, 177, 197, 0.9);
+            display: none;
+        }
+
+        .carousel-overlay h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .carousel-overlay p {
+            font-size: 1rem;
+            color: #ffffff;
+            text-align: center;
+        }
