@@ -171,24 +171,60 @@ a{
 /* Projekter side slutter */
 
 
+
+/* Tema 2 Grundlæggende Web */
+
+.grid_1-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Animation */
 
-.container_animation{
+
+.container_animation{ 
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     padding-top: 10%;
     padding: 10% 10%;
+    column-gap: 20px; 
+    row-gap: 20px; 
+} 
+
+.col_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
 }
 
+.animation_img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
 
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-    padding: 10% 10% 5%;
+  padding: 10% 10% 5%;
 }
-
 
 @media screen and (min-width: 900px) {
  .grid_1-1 {
@@ -198,3 +234,5 @@ a{
     padding: 10px 10px 110px;
   }
 }
+
+
