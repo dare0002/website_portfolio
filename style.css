@@ -8,19 +8,42 @@ body{
     min-height: 100vh;
     background-size: cover;
     background-image: linear-gradient(to bottom, #BDBFC0 0%, #C2B6C0 50%);
+    margin: 10px;
+    padding: 10px;
+    font-weight: 400;
+    padding-right: 2rem;
 }
 
 main{
     margin: 0 auto;
 }
 
-/* Forside */
+
 
  h1{
     font-family: 'EB Garamond', serif;
     color: #ffffff;
     font-size: 4rem;
 }
+
+h2{
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+a{
+    color: #ffffff;
+}
+
+
+/* Forside */
 
 .tekst_forside{
     font-family: 'EB Garamond', serif;
@@ -83,53 +106,37 @@ a{
 
 /* Projekter side starter */
 
-.grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: auto;
-}
-
-.container {
-    position: relative;
-    
-}
-
-.projekter_img {
-    width: 100%;
-}
-
-
-
 /* Karusell */
 
-.banner .carousel-box{
+.carousel-box{
     position: relative;
-    min-width: 950px;
+    /* min-width: 950px;  */
+    width: 50%;
+    left: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EEBECA;
-    box-shadow: 20px 20px 20px;
-    border: 1px solid #C2B6C0;
+    /* box-shadow: 20px 20px 20px 20px; */
+    /* border: 5px solid #ffffff; */
     backdrop-filter: blur(20px);
     border-radius: 10px;
+    margin-top: 350px;
 }
-
 .carousel {
     /* position: relative; */
-    height: 550px;
-    perspective: 1500;
+    height: 300px;
+    width: 100%;
+    perspective: 1500px;
 }
-
 .carousel .carousel-item{
-    width: 250px;
+    width: 800px;
+    height: 550px;
     cursor: pointer;
 }
-
 .carousel .carousel-item img{
-    max-width: 235px;
+    max-width: 100%;
     border-radius: 10px;
-    transform: translateX(8px) translateY(-100px);
+    transform: translateX(18px) translateY(-100px);
     object-fit: cover;
     object-position: center;
 }
@@ -139,11 +146,12 @@ a{
 
 .carousel-overlay {
             position: absolute;
-            bottom: -350px;
+            bottom: -750px;
             left: 350px;
             width: 50%;
             padding: 20px;
-            background: rgba(222, 177, 197, 0.9);
+            background: rgba(0, 0, 0, 0); /* Gör bakgrunden transparent */
+            border: 2px solid rgba(255, 255, 255, 0.9); 
             display: none;
         }
 
@@ -159,3 +167,34 @@ a{
             color: #ffffff;
             text-align: center;
         }
+
+/* Projekter side slutter */
+
+
+/* Animation */
+
+.container_animation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-top: 10%;
+    padding: 10% 10%;
+}
+
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+    padding: 10% 10% 5%;
+}
+
+
+@media screen and (min-width: 900px) {
+ .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 10px 10px 110px;
+  }
+}
