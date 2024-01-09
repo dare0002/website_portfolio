@@ -16,26 +16,52 @@ body{
 
 main{
     margin: 0 auto;
+    max-width: 1200px;
 }
 
-
+.space{
+    padding: 10% 10%;
+}
 
  h1{
     font-family: 'EB Garamond', serif;
     color: #ffffff;
-    font-size: 4rem;
+    font-size: 1.7rem;
+    font-weight:  400;
+    text-transform: uppercase;
+    letter-spacing: .16em;
 }
 
 h2{
     font-family: 'EB Garamond', serif;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight:  400;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+}
+
+h3{
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight:  400;
+    letter-spacing: .16em;
+}
+
+h4{
+    font-family: 'EB Garamond', serif;
+    color: #444141;
+    font-size: 1rem;
+    font-weight:  400;
+    letter-spacing: .16em;
 }
 
 p{
     font-family: 'EB Garamond', serif;
-    color: #ffffff;
-    font-size: 1rem;
+    color: #444141;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 a{
@@ -178,16 +204,38 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    gap: 10px;
+}
 
+.overskrift{
+    text-align: center;
 }
 
 
 
+/* Tema 3 UX/UI */
+
+.container_uxui{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-top: 10%;
+    column-gap: 20px; 
+    row-gap: 20px; 
+}
 
 
 
+/* Tema 5 Virksomhedssite */
 
-
+.container_virkssite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-top: 10%;
+    column-gap: 20px; 
+    row-gap: 20px; 
+}
 
 
 
@@ -199,7 +247,6 @@ a{
     grid-template-columns: 1fr 1fr;
     width: 100%;
     padding-top: 10%;
-    padding: 10% 10%;
     column-gap: 20px; 
     row-gap: 20px; 
 } 
@@ -223,7 +270,15 @@ a{
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  padding: 10% 10% 5%;
+  padding: 10% 10%;
+  /* padding: 10% 10% 5%; */
+}
+
+.grid-1-1-diagram{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 10% 10%;
 }
 
 @media screen and (min-width: 900px) {
@@ -233,6 +288,33 @@ a{
     width: 100%;
     padding: 10px 10px 110px;
   }
+
+  .grid-1-1-diagram{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 10px 110px;
+  }
 }
 
+
+/* Videosite */
+
+ .grid_videosite_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .right_column {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+}
+
+.flex_col {
+    padding-top: 12px;
+}
 
